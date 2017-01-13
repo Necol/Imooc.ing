@@ -11,17 +11,18 @@ Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <header> 标�
   padding:0;
   list-style: none;
   text-decoration: none;
-  font:14px/1 "Microsoft Yahei UI";
+  font:16px/1 "Microsoft Yahei UI";
 }
 
  article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
+section {width: 100%;position:relative;}
 
 
 /*header*/
-header{background-color: #2e2e2e;}
-header > div{width: 1586px;height: 96px;margin: 0 auto;position: relative;}	
+header{background-color: #2e2e2e;width: 100%}
+header > div{width: 1400px;height: 96px;margin: 0 auto;position: relative;}	
 header > div > a{display: block;float: left;margin-top: 32px;}
 header > div > nav{float: right;width: 800px;height: 96px;}
 header > div > nav > a {font-size:18px;margin-left: 55px;color:#fff;display: block;width: 145px;height:100%;float:left;text-align: center;padding-top: 40px;}
@@ -29,14 +30,11 @@ header > div > nav > a:hover,a.active{background-color: #f46208;color:#2e2e2e;}
 
 
 
-
 /*banner*/
-.backimg-banner{background-image: url(../img/banner.jpg);background-repeat: no-repeat;background-size:cover;height: 680px;position: relative;}
-section > .banner {position: absolute;top: 50%;left: 28%}
+
+section > .banner {position: absolute;top: 70%;left: 30%}
 section > .banner > h1{font-size: 70px;color:#fff;}
 section > .banner > p{font-size: 32px;color:#fff;}
-
-
 
 
 
@@ -84,13 +82,21 @@ section > .team-img > a > samp{display:block;font-size: 16px;color:#fff;line-hei
 section > .contact {width:850px;height:160px;margin: auto;padding-top: 100px;text-align: center; }
 section > .contact > h1{color:#f46208;font-size: 48px;margin-bottom: 30px;}
 section > .contact > p{margin-bottom: 80px;color:#000;line-height: 25px;}
-section > .form {width: 950px;height:450px;margin: 0 auto;text-align: center;margin-bottom: 150px;}
-section > .form > input{margin-left:15px;margin-bottom: 20px;line-height: 40px;}
-section > .form > textarea{width: 850px;height: 280px;margin-left:15px;margin-bottom: 40px;}
-section > .form > button{width: 200px;height: 50px;background-color:#f46208;color:#fff;}
+section > form{width:100%;margin: 0 auto}
+section > form > .input{width: 800px;margin: 0 auto;line-height: 100px}
+section > form > .input >input{line-height: 40px;}
+section > form > .textarea{width: 800px;margin: 0 auto;text-align: center;margin-bottom: 100px;}
+section > form > .textarea > textarea{width: 800px;height: 280px;resize: none;}
+section > form > .textarea > button{width: 200px;height: 50px;background-color:#f46208;color:#fff;}
+
 
 
 
 /*footer*/  /*这里因为是最简单的部分，所以想练一下盒子模型的掌握度。代码有点啰嗦*/
 footer{background-color: #2e2e2e;height: 95px;text-align: center;position: relative;}
 footer > p{display:block;width:224px;height:20px;color:#fff;line-height: 14px;position: absolute;top: 50%;left: 50%;margin-left:-111.4px;margin-top:-8px; }
+
+
+
+
+<button type="buttom" name="submit"  style="">Submit Message</button> 
